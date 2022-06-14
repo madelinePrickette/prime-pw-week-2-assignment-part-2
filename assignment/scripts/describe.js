@@ -26,8 +26,8 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
+// name is defined and set to 'Dane'. name is compared to 'Mary'. 'Dane' is not equal to 'Mary', first console
+// log does not run and moves to else statement. Else statement runs a console.log 'How do you do?'.
 // 
 //
 
@@ -45,10 +45,10 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// secret is defined. code is defined and set to 123. code is compared to 123 to check if equal. 123 does
+// equal 123. secret is now assigned 'super' and code is now assigned 123 * 2 which is 146. code is assigned
+// 146. code is compared to 250, code is not greater than 250 so code below is not run. 
+// Hops out of if statement and console.log is ran. we console.log 'super'.
 
 //CODE
 /*
@@ -70,10 +70,12 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// isStudent is defined and assigned true value. age is defined and assigned 34. zip is defined and assigned
+// 55407. first if statement does not apply, while isStudent is true, zip isnt > 80000 both need to be true. second
+// if statement doesnt apply, isStudent is true not false, and age is not less than 30, one of these needed to
+// be matching, niether were. third if statement, isStudent is equal to true, we console.log 'Welcome to Prime!'
+// Since we ran into an if else statement that worked, computer jumps out of the if statement and skips the
+// last console.log.
 
 //CODE
 /*
@@ -130,11 +132,14 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+
+// FIX - colorOne should be set to 'blue' and colorTwo should be set to 'red'. colors were switched.
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
 if (mix === true) {
+// FIX - we need to set BOTH colorOne and colorTwo to 'purple', not just colorOne.
   colorOne = 'purple';
 }
 */
@@ -145,8 +150,10 @@ if (mix === true) {
 
 /*
 let temp = 40;
+// FIX - time should be let not const because time continues, it is always incrementing or decrementing.
 const time = 4;
 
+//FIX - the logical operator should be && because we want both comparisons to be true.
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -160,9 +167,14 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
+//FIX - this is a best practice thing but we are checking if age is >= to minAge so age should be on the
+//FIX - left and minAge should be on the right. should be age >= minAge.
 if(minAge <= age) {
+  //FIX - we want to allow those 21 and over to enter. the below console.log should say 'enter'.
   console.log('no entry');
 } else {
+  //FIX -  this below console log is for those under 21, they should not be able to enter. console log
+  //FIX - should say 'no enter'.
   console.log('enter');
 }
 */
